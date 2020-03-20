@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>تطور إنتشار وباء كورونا في الجزائر</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+
+    <script src="global_assets/js/main/jquery.min.js"></script>
+    <script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="global_assets/js/plugins/media/fancybox.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script src = "https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Real-Time Epidemic Tracker</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.vmap.js"></script>
+    <script type="text/javascript" src="jquery.vmap.algeria.js" charset="utf-8"></script>
+    <script type="text/javascript" src="functions.js" charset="utf-8"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107050630-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107050630-2');
+    </script>
+
+</head>
+
+<div class="d-flex flex-column flex-1 layout-boxed">
+
+    <div class="navbar navbar-expand-md navbar-dark">
+        <div class="navbar-brand">
+        </div>
+    </div>
+
+    <div class="page-content">
+
+        <div class="content-wrapper">
+
+            <div class="page-header page-header-light">
+                <div class="page-header-content header-elements-md-inline">
+                    <div class="page-title d-flex">
+                        <h4><span class="font-weight-semibold">تطور إنتشار وباء كورونا في الجزائر</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <div class="row text-center mb-2">
+                                <div class="col-4">
+                                    <h3><span class="text-info-600">95</span></h3>
+                                    <span class="text-muted font-size-sm">حالة إصابة</span>
+                                </div>
+
+                                <div class="col-4">
+                                    <h3><span class="text-success-600">32</span></h3>
+                                    <span class="text-muted font-size-sm">حالة شفاء</span>
+                                </div>
+
+                                <div class="col-4">
+                                    <h3><span class="text-danger-600">12</span></h3>
+                                    <span  class="text-muted font-size-sm">حالة وفاة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <div id="vmap" style="width: 350px; height: 350px;"></div>
+
+                            <ul style="list-style-type: square;">
+                                <li style="color: #FFE5CC">0-9</li>
+                                <li style="color: #FF8000">10-100</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <table class="table text-right">
+                                <thead>
+                                <tr>
+                                    <th scope="col">الولاية</th>
+                                    <th scope="col" class="text-info">إصابة</th>
+                                    <th scope="col" class="text-success">شفاء</th>
+                                    <th scope="col" class="text-danger">وفاة</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">البليدة</th>
+                                    <td>47</td>
+                                    <td>32</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">الجزائر</th>
+                                    <td>12</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">تيزي وزو</th>
+                                    <td>6</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">سكيكدة</th>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">عنابة</th>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">الوادي</th>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">معسكر</th>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">برج بوعريريج</th>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">بجاية</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">المدية</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">البويرة</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">بومرداس</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">أدرار</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">سوق أهراس</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">تسمسيلت</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">سطيف</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">وهران</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">سيدي بلعباس</th>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">خنشلة</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <div class="card-body">
+                                إحصائيات عن الحالات التراكمية الكلية
+                                <div class="chart-container">
+                                    <div class="chart" id="total-graph" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <div class="card-body">
+                                إحصائيات عن الحالات اليومية
+                                <div class="chart-container">
+                                    <div class="chart" id="daily-graph" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card text-right">
+                            <div class="card-header header-elements-inline">
+                                <h6 class="card-title">آخر الأخبار</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-feed list-feed-solid">
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">21/03/2020</div>
+                                        حالة وفاة لمصاب بكورونا يبلغ من العمر 85 سنة
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">19/03/2020</div>
+                                        وفاة رجل يبلغ من العمر 47 سنة في المدية
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">19/03/2020</div>
+                                        إصابة 10 ووفاة واحدة
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">18/03/2020</div>
+                                        وفاة رجل يبلغ من العمر 52 سنة، وإصابة جديدة من ولاية الوادي
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">18/03/2020</div>
+                                        وفاة رجل يبلغ من العمر 62 سنة من ولاية البليدة
+                                    </div>
+
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">12/03/2020</div>
+                                        أول حالة وفاة لرجل يبلغ من العمر 67 سنة.
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">02/03/2020</div>
+                                        خمس حالات إصابة بالفيروس في ولاية البليدة.
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">28/02/2020</div>
+                                        أول حالة إصابة سجلت لرعية إيطالي في الجزائر.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card text-right">
+                            <div class="card-header header-elements-inline">
+                                <h6 class="card-title">كيف تحمي نفسك من فيروس كورونا؟</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-feed list-feed-success list-feed-solid">
+                                    <div class="list-feed-item border-success-800">
+                                        <div class="text-muted font-size-sm mb-1"></div>
+                                        <span class="font-weight-semibold">قلل من خطر الإصابة بفيروس كورونا</span>
+                                        <div>
+                                            <a href="global_assets/img/overall_ar_lar.png"
+                                               data-popup="lightbox"
+                                               rel="elsevier_applied_computing_and_informatics_certificate_of_reviewing_may_2019">
+                                                <img src="global_assets/img/overall_ar_lar.png"
+                                                     alt="" class="img-preview rounded">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="list-feed-item border-success-800">
+                                        <div class="text-muted font-size-sm mb-1"></div>
+                                        <span class="font-weight-semibold">تجنب مخالطة المرضى دون وقاية</span>
+                                        <div>
+                                            <a href="global_assets/img/isolate_ar_lar.png"
+                                               data-popup="lightbox"
+                                               rel="excellent_student_award_2019">
+                                                <img src="global_assets/img/isolate_ar_lar.png"
+                                                     alt="" class="img-preview rounded">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-feed-item border-success-800">
+                                        <div class="text-muted font-size-sm mb-1"></div>
+                                        <span class="font-weight-semibold">قم بحماية نفسك والآخرين - اغسل يديك</span>
+                                        <div>
+                                            <a href="global_assets/img/handwash_ar_lar.png"
+                                               data-popup="lightbox" rel="excellent_student_award_2018">
+                                                <img src="global_assets/img/handwash_ar_lar.png"
+                                                     alt="" class="img-preview rounded">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
